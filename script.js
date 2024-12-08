@@ -1,18 +1,23 @@
-// Obtendo os elementos
-var modal = document.getElementById("myModal");
-var img = document.getElementById("img1");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-var span = document.getElementsByClassName("close")[0];
+// Acessar o modal e os elementos de imagem
+var modal = document.getElementById("modal");
+var img = document.getElementById("imagemClick");
+var modalImg = document.getElementById("imagemModal");
+var span = document.getElementById("fecharModal");
 
-// Quando a imagem é clicada
-img.onclick = function(){
+// Quando a imagem é clicada, abre o modal e exibe a imagem ampliada
+img.onclick = function() {
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 
-// Quando o botão de fechar é clicado
-span.onclick = function() { 
+// Quando o usuário clica no botão de fechar, fecha o modal
+span.onclick = function() {
   modal.style.display = "none";
+}
+
+// Fechar o modal se o usuário clicar fora da imagem
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
