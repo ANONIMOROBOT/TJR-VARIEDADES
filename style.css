@@ -32,7 +32,7 @@ header p {
 
 /* Estilo da navegação */
 nav {
-    background-color: #00274e;
+    background-color: #616161;
     display: flex;
     justify-content: center;
 }
@@ -95,7 +95,7 @@ nav a:hover {
 
 /* Estilo do rodapé */
 .footer {
-    background-color: #224374;
+    background-color: #616161;
     color: white;
     text-align: center;
     padding: 10px;
