@@ -142,3 +142,12 @@ nav a:hover {
         font-size: 1em;
     }
 }
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #313030;
+  }
+
